@@ -1,0 +1,732 @@
+/** ################################### BODYCONTENT SPECIFIC START ################################ ***/
+/*#backgroundvideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}*/
+
+@font-face {
+  font-family: "Anita Semi-square";
+  src:  url("../fonts/anitasemisquare_font/Anitasemisquare.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Airborn"; 
+  src: url("../fonts/airborn_font/AIRBORNEGP.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
+
+h1 *,h2, h1
+{
+	font-family: 'Airborn', sans-serif;
+}
+
+#bodycontent
+{
+	top:0;
+	position: absolute;
+	background-position: center; 
+	background-size:     cover;	
+	overflow-y:scroll;
+	scroll-snap-type: y mandatory;
+	scroll-snap-stop: always;
+	-webkit-overflow-scrolling: touch;
+	width:100%;height:100%;
+}	
+
+#part1, #part2, #part3, #part4
+{
+	scroll-snap-align: center;
+	position:relative;
+}
+
+.centercontent
+{
+	align-items: center;
+	justify-content: center;
+}
+
+.hide
+{
+	display:none;
+}
+
+.overflowscroll-y
+{
+	overflow-y:scroll;
+}
+
+.hidescrollbar 
+{
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+}
+
+*::-webkit-scrollbar {
+	display: none;
+}
+
+.fullpage
+{
+	/*height:100vh; /* SCRIPTED to PX */
+	width: 100%;
+	max-width: 1920px;
+	margin:auto;
+	overflow:hidden;
+}
+
+.center-y
+{
+	margin: auto 0;
+}
+
+.center-x
+{
+	margin: 0 auto;
+}
+
+.button
+{
+	text-transform: uppercase;
+	background-color: white;
+	color: var(--main-box-color);
+	border: none;
+	text-align:center;
+	overflow:hidden;
+	padding: auto;
+	margin:1em 0.5em;
+	width:9em;
+	height:1em;
+	transition: 0.25s ease-out;
+	border-radius:5em;
+	cursor:pointer;
+	-webkit-touch-callout: none; /* iOS Safari */
+	-webkit-user-select: none; /* Safari */
+	-khtml-user-select: none; /* Konqueror HTML */
+	-moz-user-select: none; /* Old versions of Firefox */
+	-ms-user-select: none; /* Internet Explorer/Edge */
+	user-select: none; /* Non-prefixed version, currently
+						  supported by Chrome, Edge, Opera and Firefox */
+	outline: none;
+}
+
+a.button
+{
+	text-decoration: inherit;
+}
+
+body.hasHover .button:hover:not([disabled])
+{
+	/* box-shadow: 0 0 10px white; */
+	animation: 0.2s pulse infinite;
+}
+
+.button:active
+{
+}
+/************ navbar **********************************/
+
+.navbar
+{
+	position: fixed;
+	width:100%;
+	justify-content:flex-end;
+	z-index:9;
+}
+
+.progression-container 
+{
+	position: fixed;
+	width: 100%;
+	height: 7px;
+	background-color:rgba(255, 255, 255, 0.15);
+	z-index:9;
+}
+
+.progress-bar 
+{
+	height: 7px;
+	background-color: white;
+	width: 0%;
+	z-index:9;
+	border-color: white;
+    box-shadow: 0 0 10px white;
+
+}
+
+/************************* SKILL BAR **************/
+
+.container {
+	width: 70%;
+	background-color: #353b48; 
+	border-radius:3px;
+	margin:0.3% auto;
+	height: 4px;
+	overflow:hidden;
+	box-shadow:0 0 0.12em gray, 0 0 0.25em gray, 0 0 0.25em gray, 0 0 0.25em gray;
+}
+
+.skills {
+	text-align: left; 
+	padding-top: 1em;
+	padding-bottom: 1em; 
+	color: white; 
+}
+
+.onestar {width: 20%; background-color: white; border-radius:25px;; animation: onestar 2s;}
+@keyframes onestar
+{
+	0%{
+		width:0%;
+	}
+	100%{
+		width:20%;
+	}
+}
+ 
+.twostar {width: 40%; background-color: white; border-radius:25px; animation: twostar 2s;}
+@keyframes twostar
+{
+	0%{
+		width:0%;
+	}
+	100%{
+		width:40%;
+	}
+}
+ 
+.threestar {width: 60%; background-color: white; border-radius:25px; animation: threestar 2s;}
+@keyframes threestar
+{
+	0%{
+		width:0%;
+	}
+	100%{
+		width:60%;
+	}
+}
+
+.fourstar {width: 80%; background-color: white; border-radius:25px; animation: fourstar 2s;}
+@keyframes fourstar
+{
+	0%{
+		width:0%;
+	}
+	100%{
+		width:80%;
+	}
+}
+
+.fivestar {width: 100%; background-color: white; border-radius:25px; animation: fivestar 2s;}
+@keyframes fivestar
+{
+	0%{
+		width:0%;
+	}
+	100%{
+		width:100%;
+	}
+}
+
+@keyframes shake {
+	0% { transform: skewX(-35deg); }
+	5% { transform: skewX(35deg); }
+	10% { transform: skewX(-35deg); }
+	15% { transform: skewX(35deg); }
+	20% { transform: skewX(0deg); }
+	100% { transform: skewX(0deg); }  
+}
+
+@keyframes rotateclock {
+	0% { transform: rotate(0deg); }
+	25% { transform: rotate(90deg); }
+	50% { transform: rotate(180deg); }
+	75% { transform: rotate(270deg); }
+	100% { transform: rotate(360deg); }  
+}
+
+@keyframes pulse {
+	0% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7);
+	}
+	25% {
+		transform: scale(0.98);
+		box-shadow: 0 0 0 10 rgba(255, 255, 255, 0.7);
+	}
+	50% {
+		transform: scale(1);
+		box-shadow: 0 0 0 10px rgba(255, 255, 255, 0);
+	}
+	75% {
+		transform: scale(0.98);
+		box-shadow: 0 0 0 10px rgba(255, 255, 255, 0);
+	}
+	100% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+	}
+}
+
+/**********************************************/
+
+.shaketonbounty
+{
+	animation: 0.8s shake infinite alternate;
+}
+
+.360anim
+{
+	animation: 0.8s rotateclock infinite ;
+}
+
+.pulse	
+{
+    animation: pulse 1s infinite;
+}
+
+.fade-in
+{
+	opacity: 0;
+	visibility: hidden;
+	transition: opacity 1.6s;
+}
+
+.fade-in-section-left
+{
+	opacity: 0;
+	visibility: hidden;
+	transition: opacity 0.6s, transform 0.8s ease-out;
+	transform: translateX(-20%);
+}
+
+.fade-in-section-right
+{
+	opacity: 0;
+	visibility: hidden;
+	transition: opacity 0.6s, transform 0.8s ease-out;
+	transform: translateX(20%);
+}
+
+.fade-in-section-down
+{
+	opacity: 0;
+	visibility: hidden;
+	transition: opacity 0.6s, transform 0.8s ease-out;
+	transform: translateY(20%);
+}
+
+.fade-in-section-up
+{
+	opacity: 0;
+	visibility: hidden;
+	transition: opacity 0.6s, transform 0.8s ease-out;
+	transform: translateY(-20%);
+}
+
+.fade-in-section-rotate180
+{
+	opacity: 0;
+	visibility: hidden;
+	transition: opacity 0.6s, transform 0.8s ease-out;
+	transform: rotate(180deg);
+}
+
+.fade-in.is-visible, .fade-in-section-left.is-visible, .fade-in-section-right.is-visible, .fade-in-section-down.is-visible, .fade-in-section-up.is-visible, .fade-in-section-rotate180.is-visible
+{
+	opacity: 1;
+	visibility: visible;
+	transform: none;
+}
+
+/************ PART 1 ************************/
+
+.aboutmebuttons
+{
+	margin:0 auto;
+	text-align:center;
+	display:flex;
+}
+
+.aboutmebuttons > .button
+{
+	margin:auto;
+	padding:0.05em 0;
+	text-align:center;
+	cursor:pointer;
+	font-size:0.8em;
+	width:3em;
+}
+
+body.hasHover #aboutmebutton:hover:not([disabled])
+{
+	animation: 0.2s pulse infinite;
+}
+
+#aboutme
+{
+	height:0%;
+	opacity:0;
+	-webkit-transition: opacity 0.8s, height 0.8s ease-out;
+	-moz-transition: opacity 0.8s height 0.8s ease-out;
+	-o-transition: opacity 0.8s height 0.8s ease-out;
+	transition:opacity 0.8s height 0.8s ease-out;
+	text-align:left;
+	width:70%;
+	max-height:50%;
+	text-align:center;
+}
+
+.boxskillbox
+{
+	margin:1% auto;
+	width:25em;
+	padding: 1em;
+	background: var(--main-box-color-transparent);
+	border-bottom: 1px solid white;
+	border-top: 1px solid white;
+	border-radius:5%;
+}
+
+/**************** PART 2 SKILL EXP **************************/
+
+.partContainer
+{
+	height:80%;
+	width:100%;
+	margin:0 auto;
+}
+
+.skillcontainer, .expcontainer
+{
+	height:80%;	
+	flex-direction:row;
+	flex-wrap:nowrap;
+	scroll-snap-type: x mandatory;
+	scroll-snap-stop: always;
+	-webkit-overflow-scrolling: touch;
+	overflow-x:auto;
+	min-width: 80%;	
+	margin:auto;
+	padding:0;
+	overflow-y: hidden;
+}
+
+.expcontainer strong
+{
+	text-decoration:underline;
+}
+
+.mySkillSlides li
+{
+	margin:2em 0em;
+}
+
+.mySkillSlides, .myExpSlides
+{
+
+	margin:0;
+	padding:0;
+	min-width:100%;
+	min-height:100%;
+	scroll-snap-align: start;
+	
+}
+
+.mySkillSlides .overflowscroll-y, .myExpSlides .overflowscroll-y
+{
+	width:85%;
+	height:85%;
+	margin:1% auto;
+}
+
+/************************************* PART 3 WORK ************************/
+
+.partContainer
+{
+	height:80%;
+	width:100%;
+	margin:0 auto;
+}
+
+.part3 .boxskillbox
+{
+	height:100%;
+	flex-direction:row;
+	flex-wrap:nowrap;
+	scroll-snap-type: x mandatory;
+	scroll-snap-stop: always;
+	-webkit-overflow-scrolling: touch;
+	overflow-x:auto;
+	min-width: 80%;
+	margin:auto;
+	padding:0;
+	overflow-y: hidden;
+}
+
+.myWorkSlides
+{
+	margin:0;
+	padding:0;
+	min-width:100%;
+	min-height:98%;
+	scroll-snap-align: center;
+
+}
+
+.myWorkSlides .overflowscroll-y.hidescrollbar
+{
+	height:95%;
+	margin:1em;
+	padding:1%;
+	
+}
+
+.logo
+{
+	height:5em;
+}
+
+/***************************** CONTACT BOX PART 4****************************************************/
+
+.contactme p 
+{ 
+
+}
+label 
+{
+	font-size:1.2em;
+}
+.contactme input 
+{
+	width:100%;
+	font-size:1.2em;
+	padding:0.5em 0; 
+	margin:0.5em 0;
+	cursor:text;
+	background-color:rgba(0, 0, 0, 0);
+	border:0;
+	border-bottom: 1px solid white;
+	color:white;
+	outline: none;
+
+}
+.contactme input:focus 
+{
+	cursor:text;
+}
+
+.contactme ::placeholder
+{
+
+}
+
+#message 
+{
+	width:100%;
+	padding:0.5em;
+	resize: none;
+	font-size:1.2em;
+	margin-bottom:1em;
+	outline:0;
+	background-color:rgba(0, 0, 0, 0);
+	border:0;
+	border-bottom: 1px solid white;
+	color:white;
+}
+#message:focus 
+{	
+	cursor:text;
+}
+
+.contactme .validform
+{
+	color:green;
+}
+
+.contactme .invalidform
+{
+	color:red;
+}
+
+input[type=submit].button
+{
+	background-color: rgba(255, 255, 255, 0.1);
+	cursor: auto;
+	font-size:0.7em;
+}
+
+input[type=submit].button:not([disabled])
+{
+	background-color: rgba(255, 255, 255, 1);
+	cursor: auto;
+	font-size:0.7em;
+	
+}
+
+input[type=submit].button:not([disabled]), input[type=reset].button:not([disabled])
+{
+	font-size:0.7em;
+	cursor: pointer;
+}
+
+
+
+input[type=reset].button:focus:not([disabled]), input[type=submit].button:focus:not([disabled])
+{
+	outline: none;
+}
+
+#contactform
+{
+	height:100%;
+	min-width:100%;
+	display:flex;
+	flex-direction:column;
+}
+
+.part4 .boxskillbox
+{
+	padding:0;
+	max-height:80%;
+}
+
+.contactme
+{ 
+	display:inline-block;
+	margin-top:1em;
+	padding: 0 2em;
+}
+
+.creditsbox
+{
+	padding:1em;
+
+}
+
+.part4 .button
+{
+	height:2.5em;
+}
+/************************************************ BUTTON ***************************/
+
+.arrowdown, .arrowup
+{
+	height:2em;
+	position:relative;
+	bottom:0;
+	transition: bottom ease 0.25s;
+}
+
+.smallbuttons
+{
+	margin:0 auto;
+	text-align:center;
+	display:flex;
+	justify-content:center;
+}
+
+.smallbuttons .button
+{
+	font-size: 0.5em;
+	width:10vw;
+    height:1.5vh;
+	padding: 0.5em;
+	text-align:center;
+	margin:auto 0;
+}
+
+body.hasHover .arrowdown:hover:not([disabled])
+{
+	bottom:-1.5em;
+}
+
+body.hasHover .arrowup:hover:not([disabled])
+{
+	bottom:1.5em;
+}
+
+.part4 .arrowbuttons
+{
+	bottom:1em;
+}
+
+body.hasHover .arrowdown:hover:not([disabled])
+{
+	bottom:-1.5em;
+}
+
+body.hasHover .arrowup:hover:not([disabled])
+{
+	bottom:1.5em;
+}
+
+/**** MEDIA QUERIES LANDSCAPE **/
+@media (orientation : landscape)
+{
+	.navbar
+	{
+		flex-direction: column;
+		width:auto;
+		height:100%;
+		justify-content:flex-start;
+	}
+	
+	.part2 .partContainer
+	{
+		flex-direction:row;
+		width:80%;
+	}
+	.skillcontainer, .expcontainer
+	{
+		min-height:98%;
+		min-width:48%;
+	}
+		
+	.DUMMY
+	{
+		display:none;
+	}
+	
+	.part4 .boxskillbox
+	{
+		max-height:60%
+	}
+
+	.smallbuttons
+	{
+		display:flex;
+	}
+	
+	.smallbuttons .button
+	{
+		display:block;
+	}
+	
+}
+
+@media (min-width: 999px)
+	and (min-height: 699px)
+	and (orientation : landscape)
+{
+
+	.navbar
+	{
+		flex-direction: row;
+		width:100%;
+		height:auto;
+		justify-content:flex-end;
+	}
+	.smallbuttons .button
+	{
+		font-size:0.7em;
+		width:7vw;
+	}
+}
+
+/** ################################### BODYCONTENT SPECIFIC END ################################ ***/
