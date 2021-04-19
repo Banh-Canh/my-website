@@ -77,6 +77,19 @@ function rePositioningSizing()          // Reposition & Resize each "parts" of t
 	}
 }
 
+function openNav() {
+  document.getElementById("mySidenav").style.top = "0";
+  document.getElementById("opennav").removeEventListener("click", openNav);
+  document.getElementById("opennav").addEventListener("click", closeNav);
+}
+
+/* Set the width of the side navigation to 0 */
+function closeNav() {
+  document.getElementById("mySidenav").style.top = "-100vh";
+  document.getElementById("opennav").removeEventListener("click", closeNav);
+  document.getElementById("opennav").addEventListener("click", openNav);
+} 
+
 /****************############################**********************************/
 document.addEventListener('dragstart', function (e) {	// disable dragging (because it can't be done for mozilla with just css)
     e.preventDefault();
@@ -87,6 +100,8 @@ watchForHover();
 smoothAnchorScrolling();		// With snap-scroll the vanilla smooth scrolling doesn't work. This function fixes this.
 checkForm();			// Basic Front-End form check
 document.getElementById("aboutmebutton").addEventListener("click", showAboutMe);
+document.getElementById("opennav").addEventListener("click", openNav);
+//document.getElementById("mySidenav").addEventListener("click", closeNav);
 
 /*function updateClock() {
     var now = new Date(), // current date

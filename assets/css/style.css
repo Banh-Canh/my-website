@@ -295,7 +295,6 @@ body.hasHover .imgLink:focus, body.hasHover .imgLink:active
 	transform: scale(3.0);
 	-ms-transform: scale(3.0); /* IE 9 */
 	-webkit-transform: scale(3.0); /* Safari and Chrome */
-	
 }
 
 #background
