@@ -11,7 +11,7 @@
 			console.log("completed xhttp request");			  // It then start the post AJAX - XMLHttpRequest and wait for it to be ended
 		}															  // Then it close de loading pag.
 	};	
-	xhttp.open("GET", "bodycontent.html", true);
+	xhttp.open("GET", "main.html", true);
 	xhttp.send();
 };*/
 
@@ -25,7 +25,7 @@ function loaded() 										// Load the actual main "body" page using fetch
 		document.fonts.ready.then(function() 			// Wait for font to load CSS, doesn't looks like it is supported for edge.
 		{ 
 			console.log("Fonts all Loaded")	
-			loadCSS( "assets/css/stylebodycontent.css" )		// https://github.com/filamentgroup/loadCSS Allow me to pre-load CSS
+			loadCSS( "assets/css/main.css" )		// https://github.com/filamentgroup/loadCSS Allow me to pre-load CSS
 			resolve("Successfully waited for fonts to be loaded to load CSS");
 		});
 	})
@@ -36,7 +36,7 @@ function loaded() 										// Load the actual main "body" page using fetch
 	.catch((value) =>
 	{
 		console.log("Couldn't wait for fonts to be loaded. Loaded CSS anyway ... \nCatch Value = "+value);
-		loadCSS( "assets/css/stylebodycontent.css" );	
+		loadCSS( "assets/css/main.css" );	
 	})
 	.then(function ()
 	{
@@ -48,7 +48,7 @@ function loaded() 										// Load the actual main "body" page using fetch
 
 function loadBodyContent()
 {
-	fetch('assets/html/bodycontent.html')
+	fetch('assets/html/main.html')
 	.then(function (data)
 	{
 		return data.text();
