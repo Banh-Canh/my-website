@@ -21,9 +21,29 @@
   font-style: normal;
 }
 
+h1 *, h1 
+{
+	text-shadow: 0 0 2.5px #fff, 0 0 5px #ff007f, 0 0 10px #ff007f, 0 0 15px #ff007f, 0 0 20px #ff007f, 0 0 25px #ff007f, 0 0 35px #ff007f;
+}
+
 h1 *,h2, h1
 {
 	font-family: 'Airborn', sans-serif;
+}
+
+h2 
+{
+	text-shadow: 0 0 2.5px #fff, 0 0 5px #ff007f, 0 0 10px #ff007f, 0 0 15px #ff007f, 0 0 20px #ff007f, 0 0 25px #ff007f, 0 0 35px #ff007f;
+}
+
+h3
+{
+	text-shadow: 0 0 2.5px #fff, 0 0 5px #0073e6, 0 0 10px #0073e6, 0 0 15px #0073e6, 0 0 20px #0073e6, 0 0 25px #0073e6, 0 0 35px #0073e6;
+}
+
+h4
+{
+	text-shadow: 0 0 2.5px #fff, 0 0 5px #39ff14, 0 0 10px #39ff14, 0 0 15px #39ff14, 0 0 20px #39ff14, 0 0 25px #39ff14, 0 0 35px #39ff14;
 }
 
 #bodycontent
@@ -115,6 +135,11 @@ h1 *,h2, h1
 	outline: none;
 }
 
+.buttondisabled
+{
+	background-color: rgba(255, 255, 255, 0.1);cursor: auto;
+}
+
 a.button
 {
 	text-decoration: inherit;
@@ -124,6 +149,13 @@ body.hasHover .button:hover:not([disabled])
 {
 	/* box-shadow: 0 0 10px white; */
 	animation: 0.2s pulse infinite;
+}
+
+body.hasHover .buttondisabled:hover
+{
+	/* box-shadow: 0 0 10px white; */
+	animation: none !important;
+
 }
 
 .button:active
@@ -144,18 +176,18 @@ body.hasHover .button:hover:not([disabled])
 	position: fixed;
 	width: 100%;
 	height: 7px;
-	background-color:rgba(255, 255, 255, 0.15);
+	background-color:rgba( 	255,	0,	127, 0.15);
 	z-index:9;
 }
 
 .progress-bar 
 {
 	height: 7px;
-	background-color: white;
+	background-color: #ff007f;
 	width: 0%;
 	z-index:9;
-	border-color: white;
-    box-shadow: 0 0 10px white;
+	border-color: #ff007f;
+    box-shadow: 0 0 10px #ff007f;
 
 }
 
@@ -168,7 +200,7 @@ body.hasHover .button:hover:not([disabled])
 	margin:0.3% auto;
 	height: 4px;
 	overflow:hidden;
-	box-shadow:0 0 0.12em gray, 0 0 0.25em gray, 0 0 0.25em gray, 0 0 0.25em gray;
+	box-shadow:0 0 0.12em white, 0 0 0.25em white, 0 0 0.25em gray, 0 0 0.25em gray;
 }
 
 .skills {
@@ -178,7 +210,7 @@ body.hasHover .button:hover:not([disabled])
 	color: white; 
 }
 
-.onestar {width: 20%; background-color: white; border-radius:25px;; animation: onestar 2s;}
+.onestar {width: 20%; background-color: red; border-radius:25px;; animation: onestar 2s;}
 @keyframes onestar
 {
 	0%{
@@ -189,7 +221,7 @@ body.hasHover .button:hover:not([disabled])
 	}
 }
  
-.twostar {width: 40%; background-color: white; border-radius:25px; animation: twostar 2s;}
+.twostar {width: 40%; background-color: #FAED27; border-radius:25px; animation: twostar 2s;}
 @keyframes twostar
 {
 	0%{
@@ -200,7 +232,7 @@ body.hasHover .button:hover:not([disabled])
 	}
 }
  
-.threestar {width: 60%; background-color: white; border-radius:25px; animation: threestar 2s;}
+.threestar {width: 60%; background-color: #C3D938; border-radius:25px; animation: threestar 2s;}
 @keyframes threestar
 {
 	0%{
@@ -211,7 +243,7 @@ body.hasHover .button:hover:not([disabled])
 	}
 }
 
-.fourstar {width: 80%; background-color: white; border-radius:25px; animation: fourstar 2s;}
+.fourstar {width: 80%; background-color: #39ff14; border-radius:25px; animation: fourstar 2s;}
 @keyframes fourstar
 {
 	0%{
@@ -222,7 +254,7 @@ body.hasHover .button:hover:not([disabled])
 	}
 }
 
-.fivestar {width: 100%; background-color: white; border-radius:25px; animation: fivestar 2s;}
+.fivestar {width: 100%; background-color: #0073e6; border-radius:25px; animation: fivestar 2s;}
 @keyframes fivestar
 {
 	0%{
@@ -472,7 +504,7 @@ body.hasHover #aboutmebutton:hover:not([disabled])
 .myWorkSlides
 {
 	margin:0;
-	padding:0;
+	padding:0.25em;
 	min-width:100%;
 	min-height:98%;
 	scroll-snap-align: center;
@@ -638,7 +670,6 @@ input[type=reset].button:focus:not([disabled]), input[type=submit].button:focus:
     height:1.5vh;
 	padding: 0.5em;
 	text-align:center;
-	margin:auto 0;
 }
 
 body.hasHover .arrowdown:hover:not([disabled])

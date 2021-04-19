@@ -84,6 +84,15 @@ h3
 	margin:1% 0;
 }
 
+h4
+{
+	text-transform: uppercase;
+	font-size:1.05em;
+	padding: 0.4% 0.8vw;
+	text-align: center;
+	margin:1% 0;
+}
+
 strong
 {
 	font-weight:bold;
