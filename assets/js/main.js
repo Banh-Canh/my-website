@@ -107,7 +107,7 @@ smoothAnchorScrolling();		// With snap-scroll the vanilla smooth scrolling doesn
 checkForm();			// Basic Front-End form check
 document.getElementById("aboutmebutton").addEventListener("click", showAboutMe);
 document.getElementById("opennav").addEventListener("click", openNav);
-//document.getElementById("mySidenav").addEventListener("click", closeNav);
+document.getElementById("mySidenav").addEventListener("click", closeNav);
 
 /*function updateClock() {
     var now = new Date(), // current date
