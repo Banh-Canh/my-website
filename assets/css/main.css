@@ -252,9 +252,11 @@ body.hasHover .buttondisabled:hover
 
 .menuaboutme {
 	background:linear-gradient(
-	  rgba(0, 0, 0, 1), 
-	  rgba(0, 0, 0, 1)
+	  rgba(0, 0, 0, 0.8), 
+	  rgba(0, 0, 0, 0.8)
 	),url('../images/aboutme.jpg');
+	background-position: center; 
+	background-size: cover;
 }
 
 body.hasHover .menuaboutme:hover {
@@ -269,9 +271,11 @@ body.hasHover .menuaboutme:hover {
 
 .menucontact {
 	background:linear-gradient(
-	  rgba(0, 0, 0, 1), 
-	  rgba(0, 0, 0, 1)
+	  rgba(0, 0, 0, 0.8), 
+	  rgba(0, 0, 0, 0.8)
 	),url('../images/contact.jpg');
+	background-position: center; 
+	background-size: cover;
 }
 
 body.hasHover .menucontact:hover {
@@ -286,9 +290,11 @@ body.hasHover .menucontact:hover {
 
 .menuskills {
 	background:linear-gradient(
-	  rgba(0, 0, 0, 1), 
-	  rgba(0, 0, 0, 1)
+	  rgba(0, 0, 0, 0.8), 
+	  rgba(0, 0, 0, 0.8)
 	),url('../images/skills.jpg');
+	background-position: center; 
+	background-size: cover;
 }
 
 body.hasHover .menuskills:hover {
@@ -303,9 +309,11 @@ body.hasHover .menuskills:hover {
 
 .menuprojects {
 	background:linear-gradient(
-	  rgba(0, 0, 0, 1), 
-	  rgba(0, 0, 0, 1)
+	  rgba(0, 0, 0, 0.8), 
+	  rgba(0, 0, 0, 0.8)
 	),url('../images/projects.jpg');
+	background-position: center; 
+	background-size: cover;
 }
 
 body.hasHover .menuprojects:hover {
@@ -320,9 +328,11 @@ body.hasHover .menuprojects:hover {
 
 .menulinkedin {
 	background:linear-gradient(
-	  rgba(0, 0, 0, 1), 
-	  rgba(0, 0, 0, 1)
+	  rgba(0, 0, 0, 0.8), 
+	  rgba(0, 0, 0, 0.8)
 	),url('../images/linkedin.jpg');
+	background-position: center; 
+	background-size: cover;
 	
 }
 
@@ -342,9 +352,11 @@ body.hasHover .menulinkedin:hover {
 
 .menumail {
 	background:linear-gradient(
-	  rgba(0, 0, 0, 1), 
-	  rgba(0, 0, 0, 1)
+	  rgba(0, 0, 0, 0.8), 
+	  rgba(0, 0, 0, 0.8)
 	),url('../images/email.jpg');
+	background-position: center; 
+	background-size: cover;
 	
 }
 
@@ -360,9 +372,11 @@ body.hasHover .menumail:hover {
 
 .menugithub {
 	background:linear-gradient(
-	  rgba(0, 0, 0, 1), 
-	  rgba(0, 0, 0, 1)
+	  rgba(0, 0, 0, 0.8), 
+	  rgba(0, 0, 0, 0.8)
 	),url('../images/github.jpg');
+	background-position: center; 
+	background-size: cover;
 	
 }
 
@@ -378,9 +392,11 @@ body.hasHover .menugithub:hover {
 
 .menudockerhub {
 	background:linear-gradient(
-	  rgba(0, 0, 0, 1), 
-	  rgba(0, 0, 0, 1)
+	  rgba(0, 0, 0, 0.8), 
+	  rgba(0, 0, 0, 0.8)
 	),url('../images/dockerhub.jpg');
+	background-position: center; 
+	background-size: cover;
 	
 }
 
@@ -396,9 +412,11 @@ body.hasHover .menudockerhub:hover {
 
 .menuexit {
 	background:linear-gradient(
-	  rgba(0, 0, 0, 1), 
-	  rgba(0, 0, 0, 1)
+	  rgba(0, 0, 0, 0.8), 
+	  rgba(0, 0, 0, 0.8)
 	),url('../images/exit.jpg');
+	background-position: center; 
+	background-size: cover;
 	
 }
 
