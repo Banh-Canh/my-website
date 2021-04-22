@@ -200,33 +200,216 @@ body.hasHover .buttondisabled:hover
 
  /* The side navigation menu */
 .sidenav {
-  height: 100%; /* 100% Full-height */
+  height: 100vh; /* 100% Full-height */
   width: 100%; /* 0 width - change this with JavaScript */
   position: fixed; /* Stay in place */
   z-index: 8; /* Stay on top */
   left: -100vw; /* Stay at the top */
   top: -100vh;
   transform: scale(0.1);
-  background-color: rgba(0, 0, 0,0.9); /* Black*/
+  background:rgba(0,0,0,0.2);
   overflow-x: hidden; /* Disable horizontal scroll */
   transition: 0.7s; /* 0.5 second transition effect to slide in the sidenav */
   border-radius: 50%;
 }
 
 /* The navigation menu links */
-.sidenav a {
-  padding: 1%;
-  text-decoration: none;
-  color: white;
-  display: block;
+.sidenav div {
+  padding: 0;
   transition: 0.3s;
   width:100%;
+}
+
+.menubutton {
+	height:28vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+	border:0.1em solid white;
+	flex-grow: 1;
+	transition:0.3s;
+	border-radius:10%;
+	margin:1%;
+	text-decoration:none;
+}
+
+.menubutton h2 {
+	font-size:0.8em;
+}
+
+.sidenav p .button {
+	color:black;
 }
 
 .sidenav p {
 	 font-size: 1.8em;
 	 max-width:90%;
 	 padding:1%;
+}
+
+.menuaboutme {
+	background:linear-gradient(
+	  rgba(0, 0, 0, 1), 
+	  rgba(0, 0, 0, 1)
+	),url('../images/aboutme.jpg');
+}
+
+body.hasHover .menuaboutme:hover {
+	background:linear-gradient(
+	  rgba(0, 0, 0, 0.6), 
+	  rgba(0, 0, 0, 0.6)
+	),url('../images/aboutme.jpg');	
+	background-position: center; 
+	background-size: cover;
+	cursor:pointer;
+}
+
+.menucontact {
+	background:linear-gradient(
+	  rgba(0, 0, 0, 1), 
+	  rgba(0, 0, 0, 1)
+	),url('../images/contact.jpg');
+}
+
+body.hasHover .menucontact:hover {
+	background:linear-gradient(
+	  rgba(0, 0, 0, 0.6), 
+	  rgba(0, 0, 0, 0.6)
+	),url('../images/contact.jpg');	
+	background-position: center; 
+	background-size: cover;
+	cursor:pointer;
+}
+
+.menuskills {
+	background:linear-gradient(
+	  rgba(0, 0, 0, 1), 
+	  rgba(0, 0, 0, 1)
+	),url('../images/skills.jpg');
+}
+
+body.hasHover .menuskills:hover {
+	background:linear-gradient(
+	  rgba(0, 0, 0, 0.6), 
+	  rgba(0, 0, 0, 0.6)
+	),url('../images/skills.jpg');	
+	background-position: center; 
+	background-size: cover;
+	cursor:pointer;
+}
+
+.menuprojects {
+	background:linear-gradient(
+	  rgba(0, 0, 0, 1), 
+	  rgba(0, 0, 0, 1)
+	),url('../images/projects.jpg');
+}
+
+body.hasHover .menuprojects:hover {
+	background:linear-gradient(
+	  rgba(0, 0, 0, 0.6), 
+	  rgba(0, 0, 0, 0.6)
+	),url('../images/projects.jpg');	
+	background-position: center; 
+	background-size: cover;
+	cursor:pointer;
+}
+
+.menulinkedin {
+	background:linear-gradient(
+	  rgba(0, 0, 0, 1), 
+	  rgba(0, 0, 0, 1)
+	),url('../images/linkedin.jpg');
+	
+}
+
+.sidelinkmenu h2 {
+	text-shadow: 0 0 2.5px #fff, 0 0 5px #0073e6, 0 0 10px #0073e6, 0 0 15px #0073e6, 0 0 20px #0073e6, 0 0 25px #0073e6, 0 0 35px #0073e6;
+}
+
+body.hasHover .menulinkedin:hover {
+	background:linear-gradient(
+	  rgba(0, 0, 0, 0.6), 
+	  rgba(0, 0, 0, 0.6)
+	),url('../images/linkedin.jpg');	
+	background-position: center; 
+	background-size: cover;
+	cursor:pointer;
+}
+
+.menumail {
+	background:linear-gradient(
+	  rgba(0, 0, 0, 1), 
+	  rgba(0, 0, 0, 1)
+	),url('../images/email.jpg');
+	
+}
+
+body.hasHover .menumail:hover {
+	background:linear-gradient(
+	  rgba(0, 0, 0, 0.6), 
+	  rgba(0, 0, 0, 0.6)
+	),url('../images/email.jpg');	
+	background-position: center; 
+	background-size: cover;
+	cursor:pointer;
+}
+
+.menugithub {
+	background:linear-gradient(
+	  rgba(0, 0, 0, 1), 
+	  rgba(0, 0, 0, 1)
+	),url('../images/github.jpg');
+	
+}
+
+body.hasHover .menugithub:hover {
+	background:linear-gradient(
+	  rgba(0, 0, 0, 0.6), 
+	  rgba(0, 0, 0, 0.6)
+	),url('../images/github.jpg');	
+	background-position: center; 
+	background-size: cover;
+	cursor:pointer;
+}
+
+.menudockerhub {
+	background:linear-gradient(
+	  rgba(0, 0, 0, 1), 
+	  rgba(0, 0, 0, 1)
+	),url('../images/dockerhub.jpg');
+	
+}
+
+body.hasHover .menudockerhub:hover {
+	background:linear-gradient(
+	  rgba(0, 0, 0, 0.6), 
+	  rgba(0, 0, 0, 0.6)
+	),url('../images/dockerhub.jpg');	
+	background-position: center; 
+	background-size: cover;
+	cursor:pointer;
+}
+
+.menuexit {
+	background:linear-gradient(
+	  rgba(0, 0, 0, 1), 
+	  rgba(0, 0, 0, 1)
+	),url('../images/exit.jpg');
+	
+}
+
+body.hasHover .menuexit:hover {
+	background:linear-gradient(
+	  rgba(0, 0, 0, 0.6), 
+	  rgba(0, 0, 0, 0.6)
+	),url('../images/exit.jpg');	
+	background-position: center; 
+	background-size: cover;
+	cursor:pointer;
 }
 
 /* When you mouse over the navigation links, change their color */

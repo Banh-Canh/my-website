@@ -229,8 +229,8 @@ body .sideloader:nth-of-type(1)
 
 .icon
 {
-	width:2em;
-	height:2em;
+	width:3em;
+	height:3em;
 	margin:1em;
 	-webkit-touch-callout: none; /* iOS Safari */
 	-webkit-user-select: none; /* Safari */

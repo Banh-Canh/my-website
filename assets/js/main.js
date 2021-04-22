@@ -82,8 +82,10 @@ function openNav() {
   document.getElementById("mySidenav").style.left = "0";
   document.getElementById("mySidenav").style.transform = "scale(1)";
   document.getElementById("mySidenav").style.borderRadius = "0";
-  document.getElementById("opennav").removeEventListener("click", openNav);
-  document.getElementById("opennav").addEventListener("click", closeNav);
+  // document.getElementById("opennav").removeEventListener("click", openNav);
+  document.getElementById("opennav").style.top = "-100vh"
+  document.getElementById("opennav").style.left = "-100vw"
+  document.getElementById("opennav").style.transform = "scale(0)";
 }
 
 /* Set the width of the side navigation to 0 */
@@ -92,8 +94,10 @@ function closeNav() {
   document.getElementById("mySidenav").style.left = "-100vw";
   document.getElementById("mySidenav").style.borderRadius = "50%";
   document.getElementById("mySidenav").style.transform = "scale(0.1)";
-  document.getElementById("opennav").removeEventListener("click", closeNav);
-  document.getElementById("opennav").addEventListener("click", openNav);
+  // document.getElementById("opennav").removeEventListener("click", closeNav);
+  document.getElementById("opennav").style.top = "auto"
+  document.getElementById("opennav").style.left = "auto"
+  document.getElementById("opennav").style.transform = "scale(1)";
 } 
 
 /****************############################**********************************/
