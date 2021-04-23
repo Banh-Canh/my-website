@@ -59,7 +59,7 @@ h4
 	width:100%;height:100%;
 }	
 
-#part1, #part2, #part3, #part4
+#part1, #part2, #part3, #part4, #part5
 {
 	scroll-snap-align: center;
 	position:relative;
@@ -203,7 +203,7 @@ body.hasHover .buttondisabled:hover
   height: 100vh; /* 100% Full-height */
   width: 100%; /* 0 width - change this with JavaScript */
   position: fixed; /* Stay in place */
-  z-index: 8; /* Stay on top */
+  z-index: 10; /* Stay on top */
   left: -100vw; /* Stay at the top */
   top: -100vh;
   transform: scale(0.1);
@@ -776,7 +776,14 @@ body.hasHover #aboutmebutton:hover:not([disabled])
 	height:5em;
 }
 
-/***************************** CONTACT BOX PART 4****************************************************/
+/****  part 4 ****************/
+.part4 .boxskillbox 
+{
+	width:75%;
+	height:75%;
+}
+
+/***************************** CONTACT BOX PART 5****************************************************/
 
 .contactme p 
 { 
@@ -874,7 +881,7 @@ input[type=reset].button:focus:not([disabled]), input[type=submit].button:focus:
 	flex-direction:column;
 }
 
-.part4 .boxskillbox
+.part5 .boxskillbox
 {
 	padding:0;
 	max-height:80%;
@@ -893,7 +900,7 @@ input[type=reset].button:focus:not([disabled]), input[type=submit].button:focus:
 
 }
 
-.part4 .button
+.part5 .button
 {
 	height:2.5em;
 }
@@ -934,7 +941,7 @@ body.hasHover .arrowup:hover:not([disabled])
 	bottom:1.5em;
 }
 
-.part4 .arrowbuttons
+.part5 .arrowbuttons
 {
 	bottom:1em;
 }
@@ -976,7 +983,7 @@ body.hasHover .arrowup:hover:not([disabled])
 		display:none;
 	}
 	
-	.part4 .boxskillbox
+	.part5 .boxskillbox
 	{
 		max-height:60%
 	}
