@@ -210,7 +210,6 @@ body.hasHover .buttondisabled:hover
   background:rgba(0,0,0,0.2);
   overflow-x: hidden; /* Disable horizontal scroll */
   transition: 0.7s; /* 0.5 second transition effect to slide in the sidenav */
-  border-radius: 50%;
 }
 
 /* The navigation menu links */
@@ -236,6 +235,10 @@ body.hasHover .buttondisabled:hover
 	text-decoration:none;
 }
 
+body.hasHover .menubutton:hover {
+	border-radius:0;
+}
+
 .menubutton h2 {
 	font-size:0.8em;
 }
@@ -252,8 +255,8 @@ body.hasHover .buttondisabled:hover
 
 .menuaboutme {
 	background:linear-gradient(
-	  rgba(0, 0, 0, 0.8), 
-	  rgba(0, 0, 0, 0.8)
+	  rgba(0, 0, 0, 0.6), 
+	  rgba(0, 0, 0, 0.6)
 	),url('../images/aboutme.jpg');
 	background-position: center; 
 	background-size: cover;
@@ -261,8 +264,8 @@ body.hasHover .buttondisabled:hover
 
 body.hasHover .menuaboutme:hover {
 	background:linear-gradient(
-	  rgba(0, 0, 0, 0.6), 
-	  rgba(0, 0, 0, 0.6)
+	  rgba(0, 0, 0, 0.4), 
+	  rgba(0, 0, 0, 0.4)
 	),url('../images/aboutme.jpg');	
 	background-position: center; 
 	background-size: cover;
@@ -271,8 +274,8 @@ body.hasHover .menuaboutme:hover {
 
 .menucontact {
 	background:linear-gradient(
-	  rgba(0, 0, 0, 0.8), 
-	  rgba(0, 0, 0, 0.8)
+	  rgba(0, 0, 0, 0.6), 
+	  rgba(0, 0, 0, 0.6)
 	),url('../images/contact.jpg');
 	background-position: center; 
 	background-size: cover;
@@ -280,8 +283,8 @@ body.hasHover .menuaboutme:hover {
 
 body.hasHover .menucontact:hover {
 	background:linear-gradient(
-	  rgba(0, 0, 0, 0.6), 
-	  rgba(0, 0, 0, 0.6)
+	  rgba(0, 0, 0, 0.4), 
+	  rgba(0, 0, 0, 0.4)
 	),url('../images/contact.jpg');	
 	background-position: center; 
 	background-size: cover;
@@ -290,8 +293,8 @@ body.hasHover .menucontact:hover {
 
 .menuskills {
 	background:linear-gradient(
-	  rgba(0, 0, 0, 0.8), 
-	  rgba(0, 0, 0, 0.8)
+	  rgba(0, 0, 0, 0.6), 
+	  rgba(0, 0, 0, 0.6)
 	),url('../images/skills.jpg');
 	background-position: center; 
 	background-size: cover;
@@ -299,8 +302,8 @@ body.hasHover .menucontact:hover {
 
 body.hasHover .menuskills:hover {
 	background:linear-gradient(
-	  rgba(0, 0, 0, 0.6), 
-	  rgba(0, 0, 0, 0.6)
+	  rgba(0, 0, 0, 0.4), 
+	  rgba(0, 0, 0, 0.4)
 	),url('../images/skills.jpg');	
 	background-position: center; 
 	background-size: cover;
@@ -309,8 +312,8 @@ body.hasHover .menuskills:hover {
 
 .menuprojects {
 	background:linear-gradient(
-	  rgba(0, 0, 0, 0.8), 
-	  rgba(0, 0, 0, 0.8)
+	  rgba(0, 0, 0, 0.6), 
+	  rgba(0, 0, 0, 0.6)
 	),url('../images/projects.jpg');
 	background-position: center; 
 	background-size: cover;
@@ -318,8 +321,8 @@ body.hasHover .menuskills:hover {
 
 body.hasHover .menuprojects:hover {
 	background:linear-gradient(
-	  rgba(0, 0, 0, 0.6), 
-	  rgba(0, 0, 0, 0.6)
+	  rgba(0, 0, 0, 0.4), 
+	  rgba(0, 0, 0, 0.4)
 	),url('../images/projects.jpg');	
 	background-position: center; 
 	background-size: cover;
@@ -328,8 +331,8 @@ body.hasHover .menuprojects:hover {
 
 .menulinkedin {
 	background:linear-gradient(
-	  rgba(0, 0, 0, 0.8), 
-	  rgba(0, 0, 0, 0.8)
+	  rgba(0, 0, 0, 0.6), 
+	  rgba(0, 0, 0, 0.6)
 	),url('../images/linkedin.jpg');
 	background-position: center; 
 	background-size: cover;
@@ -342,8 +345,8 @@ body.hasHover .menuprojects:hover {
 
 body.hasHover .menulinkedin:hover {
 	background:linear-gradient(
-	  rgba(0, 0, 0, 0.6), 
-	  rgba(0, 0, 0, 0.6)
+	  rgba(0, 0, 0, 0.4), 
+	  rgba(0, 0, 0, 0.4)
 	),url('../images/linkedin.jpg');	
 	background-position: center; 
 	background-size: cover;
@@ -352,8 +355,8 @@ body.hasHover .menulinkedin:hover {
 
 .menumail {
 	background:linear-gradient(
-	  rgba(0, 0, 0, 0.8), 
-	  rgba(0, 0, 0, 0.8)
+	  rgba(0, 0, 0, 0.6), 
+	  rgba(0, 0, 0, 0.6)
 	),url('../images/email.jpg');
 	background-position: center; 
 	background-size: cover;
@@ -362,8 +365,8 @@ body.hasHover .menulinkedin:hover {
 
 body.hasHover .menumail:hover {
 	background:linear-gradient(
-	  rgba(0, 0, 0, 0.6), 
-	  rgba(0, 0, 0, 0.6)
+	  rgba(0, 0, 0, 0.4), 
+	  rgba(0, 0, 0, 0.4)
 	),url('../images/email.jpg');	
 	background-position: center; 
 	background-size: cover;
@@ -372,8 +375,8 @@ body.hasHover .menumail:hover {
 
 .menugithub {
 	background:linear-gradient(
-	  rgba(0, 0, 0, 0.8), 
-	  rgba(0, 0, 0, 0.8)
+	  rgba(0, 0, 0, 0.6), 
+	  rgba(0, 0, 0, 0.6)
 	),url('../images/github.jpg');
 	background-position: center; 
 	background-size: cover;
@@ -382,8 +385,8 @@ body.hasHover .menumail:hover {
 
 body.hasHover .menugithub:hover {
 	background:linear-gradient(
-	  rgba(0, 0, 0, 0.6), 
-	  rgba(0, 0, 0, 0.6)
+	  rgba(0, 0, 0, 0.4), 
+	  rgba(0, 0, 0, 0.4)
 	),url('../images/github.jpg');	
 	background-position: center; 
 	background-size: cover;
@@ -392,8 +395,8 @@ body.hasHover .menugithub:hover {
 
 .menudockerhub {
 	background:linear-gradient(
-	  rgba(0, 0, 0, 0.8), 
-	  rgba(0, 0, 0, 0.8)
+	  rgba(0, 0, 0, 0.6), 
+	  rgba(0, 0, 0, 0.6)
 	),url('../images/dockerhub.jpg');
 	background-position: center; 
 	background-size: cover;
@@ -402,8 +405,8 @@ body.hasHover .menugithub:hover {
 
 body.hasHover .menudockerhub:hover {
 	background:linear-gradient(
-	  rgba(0, 0, 0, 0.6), 
-	  rgba(0, 0, 0, 0.6)
+	  rgba(0, 0, 0, 0.4), 
+	  rgba(0, 0, 0, 0.4)
 	),url('../images/dockerhub.jpg');	
 	background-position: center; 
 	background-size: cover;
@@ -412,8 +415,8 @@ body.hasHover .menudockerhub:hover {
 
 .menuexit {
 	background:linear-gradient(
-	  rgba(0, 0, 0, 0.8), 
-	  rgba(0, 0, 0, 0.8)
+	  rgba(0, 0, 0, 0.6), 
+	  rgba(0, 0, 0, 0.6)
 	),url('../images/exit.jpg');
 	background-position: center; 
 	background-size: cover;
@@ -422,8 +425,8 @@ body.hasHover .menudockerhub:hover {
 
 body.hasHover .menuexit:hover {
 	background:linear-gradient(
-	  rgba(0, 0, 0, 0.6), 
-	  rgba(0, 0, 0, 0.6)
+	  rgba(0, 0, 0, 0.4), 
+	  rgba(0, 0, 0, 0.4)
 	),url('../images/exit.jpg');	
 	background-position: center; 
 	background-size: cover;
