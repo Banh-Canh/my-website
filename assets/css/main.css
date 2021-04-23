@@ -329,6 +329,25 @@ body.hasHover .menuprojects:hover {
 	cursor:pointer;
 }
 
+.menuotherprojects {
+	background:linear-gradient(
+	  rgba(0, 0, 0, 0.6), 
+	  rgba(0, 0, 0, 0.6)
+	),url('../images/otherprojects.jpg');
+	background-position: center; 
+	background-size: cover;
+}
+
+body.hasHover .menuotherprojects:hover {
+	background:linear-gradient(
+	  rgba(0, 0, 0, 0.4), 
+	  rgba(0, 0, 0, 0.4)
+	),url('../images/otherprojects.jpg');	
+	background-position: center; 
+	background-size: cover;
+	cursor:pointer;
+}
+
 .menulinkedin {
 	background:linear-gradient(
 	  rgba(0, 0, 0, 0.6), 
