@@ -266,7 +266,7 @@ body.hasHover .menubutton:hover {
 	  rgba(0, 0, 0, 0.6), 
 	  rgba(0, 0, 0, 0.6)
 	),url('../images/aboutme.jpg');
-	background-position: center; 
+	background-position: center top;
 	background-size: cover;
 }
 
@@ -285,7 +285,7 @@ body.hasHover .menuaboutme:hover {
 	  rgba(0, 0, 0, 0.6), 
 	  rgba(0, 0, 0, 0.6)
 	),url('../images/contact.jpg');
-	background-position: center; 
+	background-position: center top;
 	background-size: cover;
 }
 
@@ -304,7 +304,7 @@ body.hasHover .menucontact:hover {
 	  rgba(0, 0, 0, 0.6), 
 	  rgba(0, 0, 0, 0.6)
 	),url('../images/skills.jpg');
-	background-position: center; 
+	background-position: center top;
 	background-size: cover;
 }
 
@@ -323,7 +323,7 @@ body.hasHover .menuskills:hover {
 	  rgba(0, 0, 0, 0.6), 
 	  rgba(0, 0, 0, 0.6)
 	),url('../images/projects.jpg');
-	background-position: center; 
+	background-position: center top;
 	background-size: cover;
 }
 
@@ -342,7 +342,7 @@ body.hasHover .menuprojects:hover {
 	  rgba(0, 0, 0, 0.6), 
 	  rgba(0, 0, 0, 0.6)
 	),url('../images/otherprojects.jpg');
-	background-position: center; 
+	background-position: center top;
 	background-size: cover;
 }
 
@@ -361,7 +361,7 @@ body.hasHover .menuotherprojects:hover {
 	  rgba(0, 0, 0, 0.6), 
 	  rgba(0, 0, 0, 0.6)
 	),url('../images/linkedin.jpg');
-	background-position: center; 
+	background-position: center top;
 	background-size: cover;
 	
 }
@@ -385,9 +385,8 @@ body.hasHover .menulinkedin:hover {
 	  rgba(0, 0, 0, 0.6), 
 	  rgba(0, 0, 0, 0.6)
 	),url('../images/email.jpg');
-	background-position: center; 
+	background-position: center top;
 	background-size: cover;
-	
 }
 
 body.hasHover .menumail:hover {
@@ -405,9 +404,8 @@ body.hasHover .menumail:hover {
 	  rgba(0, 0, 0, 0.6), 
 	  rgba(0, 0, 0, 0.6)
 	),url('../images/github.jpg');
-	background-position: center; 
+	background-position: center top;
 	background-size: cover;
-	
 }
 
 body.hasHover .menugithub:hover {
@@ -425,9 +423,8 @@ body.hasHover .menugithub:hover {
 	  rgba(0, 0, 0, 0.6), 
 	  rgba(0, 0, 0, 0.6)
 	),url('../images/dockerhub.jpg');
-	background-position: center; 
+	background-position: center top;
 	background-size: cover;
-	
 }
 
 body.hasHover .menudockerhub:hover {
@@ -445,9 +442,8 @@ body.hasHover .menudockerhub:hover {
 	  rgba(0, 0, 0, 0.6), 
 	  rgba(0, 0, 0, 0.6)
 	),url('../images/exit.jpg');
-	background-position: center; 
+	background-position: center top;
 	background-size: cover;
-	
 }
 
 body.hasHover .menuexit:hover {
@@ -806,7 +802,7 @@ body.hasHover #aboutmebutton:hover:not([disabled])
 /****  part 4 ****************/
 .part4 .boxskillbox 
 {
-	width:75%;
+	min-width:80%;
 	height:75%;
 }
 
