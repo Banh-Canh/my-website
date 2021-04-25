@@ -750,6 +750,11 @@ body.hasHover #aboutmebutton:hover:not([disabled])
 	width:85%;
 	height:85%;
 	margin:1% auto;
+	padding:1em;
+}
+
+.simplebar-scrollbar::before {
+  background-color: white;
 }
 
 /************************************* PART 3 WORK ************************/
@@ -794,6 +799,11 @@ body.hasHover #aboutmebutton:hover:not([disabled])
 	
 }
 
+.workcontent {
+	width:90%;
+	max-width:900px;
+}
+
 .logo
 {
 	height:5em;
@@ -804,6 +814,11 @@ body.hasHover #aboutmebutton:hover:not([disabled])
 {
 	min-width:80%;
 	height:75%;
+}
+
+.part4 .part4Container 
+{
+	height:100%;
 }
 
 /***************************** CONTACT BOX PART 5****************************************************/

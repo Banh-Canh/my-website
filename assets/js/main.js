@@ -177,49 +177,6 @@ imagesLazy.forEach(elem =>
 
 const bgLazy = document.querySelectorAll('.lazyBg');	// For now, lazy load all images of a partX if one of the image enter view
 
-backgroundObserver = new IntersectionObserver(entries => 
-{
-	entries.forEach(entry => 
-	{
-		if (entry.intersectionRatio > 0)
-		{
-			if (document.querySelector('.part2').contains( entry.target )) 
-			{
-				for (i=0;i<bgLazy.length;i++)
-				{
-					if ( document.querySelector('.part2').contains( bgLazy[i] ) )
-					{
-						var src = bgLazy[i].getAttribute('data-lazy');	
-						var imgbg = document.createElement('img');
-						imgbg.src = src;
-						imgbg.onload = bgLazy[i].style.backgroundImage = "url('"+src+"')"; 
-						backgroundObserver.unobserve(bgLazy[i]);
-					}
-				}
-			}
-			else if (document.querySelector('.part3').contains( entry.target )) 
-			{
-				for (i=0;i<bgLazy.length;i++)
-				{
-					if ( document.querySelector('.part3').contains( bgLazy[i] ) )
-					{
-						var src = bgLazy[i].getAttribute('data-lazy');	
-						var imgbg = document.createElement('img');
-						imgbg.src = src;
-						imgbg.onload = bgLazy[i].style.backgroundImage = "url('"+src+"')"; 
-						backgroundObserver.unobserve(bgLazy[i]);
-					}
-				}
-			}
-		} 
-	});
-});
-
-bgLazy.forEach(elem => 
-{
-	backgroundObserver.observe(elem);
-});
-
 /******************##########################********************************/
 function getBgUrl(el) 					//https://jsfiddle.net/tovic/gmzSG/ thanks google, 
 {								
