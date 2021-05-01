@@ -59,7 +59,7 @@ h4
 	width:100%;height:100%;
 }	
 
-#part1, #part2, #part3, #part4, #part5
+#part1, #part2, #part3, #part4, #part5, #partend
 {
 	scroll-snap-align: center;
 	position:relative;
@@ -158,8 +158,20 @@ body.hasHover .buttondisabled:hover
 
 }
 
-.button:active
+.badge
 {
+	width:7em;
+	height:7em;
+	margin:1em;
+	-webkit-touch-callout: none; /* iOS Safari */
+	-webkit-user-select: none; /* Safari */
+	-khtml-user-select: none; /* Konqueror HTML */
+	-moz-user-select: none; /* Old versions of Firefox */
+	-ms-user-select: none; /* Internet Explorer/Edge */
+	user-select: none; /* Non-prefixed version, currently
+	supported by Chrome, Edge, Opera and Firefox */
+	border-radius:10px;
+	outline: none;
 }
 /************ navbar **********************************/
 
@@ -380,20 +392,20 @@ body.hasHover .menulinkedin:hover {
 	cursor:pointer;
 }
 
-.menumail {
+.menucertifications {
 	background:linear-gradient(
 	  rgba(0, 0, 0, 0.6), 
 	  rgba(0, 0, 0, 0.6)
-	),url('../images/email.jpg');
+	),url('../images/certifications.jpg');
 	background-position: center top;
 	background-size: cover;
 }
 
-body.hasHover .menumail:hover {
+body.hasHover .menucertifications:hover {
 	background:linear-gradient(
 	  rgba(0, 0, 0, 0.4), 
 	  rgba(0, 0, 0, 0.4)
-	),url('../images/email.jpg');	
+	),url('../images/certifications.jpg');	
 	background-position: center; 
 	background-size: cover;
 	cursor:pointer;
@@ -766,7 +778,7 @@ body.hasHover #aboutmebutton:hover:not([disabled])
 	margin:0 auto;
 }
 
-.part3 .boxskillbox
+#part3 .boxskillbox
 {
 	height:100%;
 	flex-direction:row;
@@ -810,15 +822,25 @@ body.hasHover #aboutmebutton:hover:not([disabled])
 }
 
 /****  part 4 ****************/
-.part4 .boxskillbox 
+#part4 .boxskillbox 
 {
 	min-width:80%;
 	height:75%;
 }
 
-.part4 .part4Container 
+#part4 .part4Container 
 {
 	height:100%;
+}
+
+#part5 .part4Container 
+{
+	height:100%;
+}
+
+#part5 .boxskillbox 
+{
+	min-width:80%;
 }
 
 /***************************** CONTACT BOX PART 5****************************************************/
@@ -919,7 +941,7 @@ input[type=reset].button:focus:not([disabled]), input[type=submit].button:focus:
 	flex-direction:column;
 }
 
-.part5 .boxskillbox
+#partend .boxskillbox
 {
 	padding:0;
 	max-height:80%;
@@ -938,7 +960,7 @@ input[type=reset].button:focus:not([disabled]), input[type=submit].button:focus:
 
 }
 
-.part5 .button
+#partend .button
 {
 	height:2.5em;
 }
@@ -979,7 +1001,7 @@ body.hasHover .arrowup:hover:not([disabled])
 	bottom:1.5em;
 }
 
-.part5 .arrowbuttons
+#partend .arrowbuttons
 {
 	bottom:1em;
 }
@@ -1005,7 +1027,7 @@ body.hasHover .arrowup:hover:not([disabled])
 		justify-content:flex-start;
 	}
 	
-	.part2 .partContainer
+	#part2 .partContainer
 	{
 		flex-direction:row;
 		width:80%;
@@ -1021,7 +1043,7 @@ body.hasHover .arrowup:hover:not([disabled])
 		display:none;
 	}
 	
-	.part5 .boxskillbox
+	#partend .boxskillbox
 	{
 		max-height:60%
 	}
@@ -1054,6 +1076,11 @@ body.hasHover .arrowup:hover:not([disabled])
 	{
 		font-size:0.7em;
 		width:7vw;
+	}
+	.badge
+	{
+		width:10em;
+		height:10em;
 	}
 }
 
