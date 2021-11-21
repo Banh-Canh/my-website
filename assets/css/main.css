@@ -592,8 +592,8 @@ body.hasHover #aboutmebutton:hover:not([disabled])
 	width:25em;
 	padding: 1em;
 	background: var(--main-box-color-transparent);
-	border-bottom: 1px solid white;
-	border-top: 1px solid white;
+	border-bottom: 1px solid rgb(0, 0, 0);
+	border-top: 1px solid rgb(0, 0, 0);
 	border-radius:5%;
 }
 
