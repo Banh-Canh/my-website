@@ -59,7 +59,7 @@ h4
 	width:100%;height:100%;
 }	
 
-#part1, #part2, #part3, #part4, #part5, #partend
+#part1, #part2, #part3, #part4, #partend
 {
 	scroll-snap-align: center;
 	position:relative;
@@ -822,28 +822,13 @@ body.hasHover #aboutmebutton:hover:not([disabled])
 }
 
 /****  part 4 ****************/
+
 #part4 .boxskillbox 
 {
 	min-width:80%;
-	height:75%;
 }
 
-#part4 .part4Container 
-{
-	height:100%;
-}
-
-#part5 .part4Container 
-{
-	height:100%;
-}
-
-#part5 .boxskillbox 
-{
-	min-width:80%;
-}
-
-/***************************** CONTACT BOX PART 5****************************************************/
+/***************************** CONTACT BOX PART 4****************************************************/
 
 .contactme p 
 { 
