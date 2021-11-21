@@ -247,7 +247,7 @@ body.hasHover .buttondisabled:hover
 	box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
-	border:0.1em solid white;
+	border:0.1em solid rgb(0, 0, 0);
 	flex-grow: 1;
 	transition:0.3s;
 	border-radius:10%;
